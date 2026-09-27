@@ -1,0 +1,20 @@
+{
+  "50-30-20": {
+    "description": "Classic needs/wants/savings split",
+    "needs": 50,
+    "wants": 30,
+    "savings": 20
+  },
+  "70-20-10": {
+    "description": "Higher spending flexibility, lighter savings target",
+    "needs": 70,
+    "wants": 20,
+    "savings": 10
+  },
+  "aggressive-savings": {
+    "description": "For a savings-focused goal, e.g. paying off debt or a big purchase",
+    "needs": 50,
+    "wants": 15,
+    "savings": 35
+  }
+}

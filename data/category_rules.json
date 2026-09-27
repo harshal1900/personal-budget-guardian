@@ -1,5 +1,0 @@
-[
-  {"category": "Food", "monthly_cap": 600, "priority": "high"},
-  {"category": "Entertainment", "monthly_cap": 150, "priority": "low"},
-  {"category": "Subscriptions", "monthly_cap": 80, "priority": "medium"}
-]

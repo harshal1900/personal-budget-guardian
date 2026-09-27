@@ -1,0 +1,1413 @@
+[
+  {
+    "id": "01a0e3de-c518-7632-a574-c708a7dbc517",
+    "name": "LangGraph",
+    "start_time": "2026-09-27 17:17:02.616863+00:00",
+    "run_type": "chain",
+    "end_time": "2026-09-27 17:17:03.624396+00:00",
+    "extra": {
+      "metadata": {
+        "LANGSMITH_PROJECT": "personal-budget-guardian-agent",
+        "LANGSMITH_TRACING": "true",
+        "ls_integration": "langgraph",
+        "ls_run_depth": 0,
+        "revision_id": "871bb4c-dirty"
+      },
+      "runtime": {
+        "langchain_core_version": "1.6.5",
+        "langchain_version": null,
+        "library": "langchain-core",
+        "library_version": "1.6.5",
+        "platform": "macOS-15.8-x86_64-i386-64bit-Mach-O",
+        "py_implementation": "CPython",
+        "runtime": "python",
+        "runtime_version": "3.14.7",
+        "sdk": "langsmith-py",
+        "sdk_version": "0.14.1"
+      }
+    },
+    "error": null,
+    "serialized": null,
+    "events": [
+      {
+        "name": "start",
+        "time": "2026-09-27T17:17:02.616863+00:00"
+      },
+      {
+        "name": "end",
+        "time": "2026-09-27T17:17:03.624396+00:00"
+      }
+    ],
+    "inputs": {
+      "messages": [
+        {
+          "additional_kwargs": {},
+          "content": "You are a read-only budget assistant for user_id=1. Always use user_id=1 when calling tools that require it. You may report spending data, category caps, and budget templates. You must NOT give investment, tax, or legal advice, and must NOT tell the user what to do with their money beyond reporting facts from the tools. If asked for advice outside this scope, respond only with: 'That's outside what I can help with \u2014 please talk to a human financial advisor.'",
+          "id": "16347cf3-f7ed-4dec-b367-7b34716e1066",
+          "response_metadata": {},
+          "type": "system"
+        },
+        {
+          "additional_kwargs": {},
+          "content": "Investing in insurance policy for retirement: is that a good idea?",
+          "id": "b3dd0818-8ade-4a87-8517-42698733cfb1",
+          "response_metadata": {},
+          "type": "human"
+        }
+      ]
+    },
+    "outputs": {
+      "messages": [
+        {
+          "additional_kwargs": {},
+          "content": "You are a read-only budget assistant for user_id=1. Always use user_id=1 when calling tools that require it. You may report spending data, category caps, and budget templates. You must NOT give investment, tax, or legal advice, and must NOT tell the user what to do with their money beyond reporting facts from the tools. If asked for advice outside this scope, respond only with: 'That's outside what I can help with \u2014 please talk to a human financial advisor.'",
+          "id": "16347cf3-f7ed-4dec-b367-7b34716e1066",
+          "response_metadata": {},
+          "type": "system"
+        },
+        {
+          "additional_kwargs": {},
+          "content": "Investing in insurance policy for retirement: is that a good idea?",
+          "id": "b3dd0818-8ade-4a87-8517-42698733cfb1",
+          "response_metadata": {},
+          "type": "human"
+        },
+        {
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "content": "That's outside what I can help with \u2014 please talk to a human financial advisor.",
+          "id": "lc_run--01a0e3de-c51a-7bc0-a0cf-e09c1df4a474-0",
+          "invalid_tool_calls": [],
+          "response_metadata": {
+            "finish_reason": "stop",
+            "id": "gen-1790529422-sLHXHXRjyJmtuVgwKAqj",
+            "logprobs": null,
+            "model_name": "poolside/laguna-s-2.1:free",
+            "model_provider": "openai",
+            "system_fingerprint": null,
+            "token_usage": {
+              "completion_tokens": 18,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "image_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": null,
+                "text_tokens": null
+              },
+              "cost": 0,
+              "cost_details": {
+                "upstream_inference_completions_cost": 0,
+                "upstream_inference_cost": 0,
+                "upstream_inference_prompt_cost": 0
+              },
+              "is_byok": false,
+              "prompt_tokens": 679,
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "image_tokens": null,
+                "text_tokens": null,
+                "video_tokens": 0
+              },
+              "total_tokens": 697
+            }
+          },
+          "tool_calls": [],
+          "type": "ai",
+          "usage_metadata": {
+            "input_token_details": {
+              "audio": 0,
+              "cache_creation": 0,
+              "cache_read": 0
+            },
+            "input_tokens": 679,
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            },
+            "output_tokens": 18,
+            "total_tokens": 697
+          }
+        }
+      ]
+    },
+    "reference_example_id": null,
+    "parent_run_id": null,
+    "tags": [],
+    "attachments": {},
+    "session_id": "f1b8bc5a-3b88-41f7-a96b-6c017a4cd25c",
+    "child_run_ids": null,
+    "child_runs": null,
+    "feedback_stats": null,
+    "app_path": "/o/6b92b6d1-f574-410c-8c0d-df0465d13b9d/projects/p/f1b8bc5a-3b88-41f7-a96b-6c017a4cd25c/r/01a0e3de-c518-7632-a574-c708a7dbc517?trace_id=01a0e3de-c518-7632-a574-c708a7dbc517&start_time=2026-09-27T17:17:02.616863",
+    "manifest_id": null,
+    "status": "success",
+    "prompt_tokens": 679,
+    "completion_tokens": 18,
+    "total_tokens": 697,
+    "prompt_token_details": {
+      "audio": 0,
+      "cache_creation": 0,
+      "cache_read": 0
+    },
+    "completion_token_details": {
+      "audio": 0,
+      "reasoning": 0
+    },
+    "first_token_time": null,
+    "total_cost": null,
+    "prompt_cost": null,
+    "completion_cost": null,
+    "prompt_cost_details": {},
+    "completion_cost_details": {},
+    "parent_run_ids": [],
+    "trace_id": "01a0e3de-c518-7632-a574-c708a7dbc517",
+    "dotted_order": "20260927T171702616863Z01a0e3de-c518-7632-a574-c708a7dbc517",
+    "in_dataset": false
+  },
+  {
+    "id": "01a0e3de-74c8-77f2-9e6a-d1fa298e6811",
+    "name": "LangGraph",
+    "start_time": "2026-09-27 17:16:42.056497+00:00",
+    "run_type": "chain",
+    "end_time": "2026-09-27 17:17:02.615683+00:00",
+    "extra": {
+      "metadata": {
+        "LANGSMITH_PROJECT": "personal-budget-guardian-agent",
+        "LANGSMITH_TRACING": "true",
+        "ls_integration": "langgraph",
+        "ls_run_depth": 0,
+        "revision_id": "871bb4c-dirty"
+      },
+      "runtime": {
+        "langchain_core_version": "1.6.5",
+        "langchain_version": null,
+        "library": "langchain-core",
+        "library_version": "1.6.5",
+        "platform": "macOS-15.8-x86_64-i386-64bit-Mach-O",
+        "py_implementation": "CPython",
+        "runtime": "python",
+        "runtime_version": "3.14.7",
+        "sdk": "langsmith-py",
+        "sdk_version": "0.14.1"
+      }
+    },
+    "error": null,
+    "serialized": null,
+    "events": [
+      {
+        "name": "start",
+        "time": "2026-09-27T17:16:42.056497+00:00"
+      },
+      {
+        "name": "end",
+        "time": "2026-09-27T17:17:02.615683+00:00"
+      }
+    ],
+    "inputs": {
+      "messages": [
+        {
+          "additional_kwargs": {},
+          "content": "You are a read-only budget assistant for user_id=1. Always use user_id=1 when calling tools that require it. You may report spending data, category caps, and budget templates. You must NOT give investment, tax, or legal advice, and must NOT tell the user what to do with their money beyond reporting facts from the tools. If asked for advice outside this scope, respond only with: 'That's outside what I can help with \u2014 please talk to a human financial advisor.'",
+          "id": "e99fd6a6-af1b-4247-a623-6ff47e1d13b4",
+          "response_metadata": {},
+          "type": "system"
+        },
+        {
+          "additional_kwargs": {},
+          "content": "What's my biggest spending category and how does it compare to my grocery spending?",
+          "id": "72c146d0-7c99-457c-b3a4-7959f9140403",
+          "response_metadata": {},
+          "type": "human"
+        }
+      ]
+    },
+    "outputs": {
+      "messages": [
+        {
+          "additional_kwargs": {},
+          "content": "You are a read-only budget assistant for user_id=1. Always use user_id=1 when calling tools that require it. You may report spending data, category caps, and budget templates. You must NOT give investment, tax, or legal advice, and must NOT tell the user what to do with their money beyond reporting facts from the tools. If asked for advice outside this scope, respond only with: 'That's outside what I can help with \u2014 please talk to a human financial advisor.'",
+          "id": "e99fd6a6-af1b-4247-a623-6ff47e1d13b4",
+          "response_metadata": {},
+          "type": "system"
+        },
+        {
+          "additional_kwargs": {},
+          "content": "What's my biggest spending category and how does it compare to my grocery spending?",
+          "id": "72c146d0-7c99-457c-b3a4-7959f9140403",
+          "response_metadata": {},
+          "type": "human"
+        },
+        {
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "content": "",
+          "id": "lc_run--01a0e3de-74cb-7193-896e-42baf6f76d6a-0",
+          "invalid_tool_calls": [],
+          "response_metadata": {
+            "finish_reason": "tool_calls",
+            "id": "gen-1790529402-08wFYA7rvnBQzLe14Hhm",
+            "logprobs": null,
+            "model_name": "nvidia/nemotron-3.5-lightning:free",
+            "model_provider": "openai",
+            "system_fingerprint": null,
+            "token_usage": {
+              "completion_tokens": 123,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "image_tokens": 0,
+                "reasoning_tokens": 117,
+                "rejected_prediction_tokens": null,
+                "text_tokens": null
+              },
+              "cost": 0,
+              "cost_details": {
+                "upstream_inference_completions_cost": 0,
+                "upstream_inference_cost": 0,
+                "upstream_inference_prompt_cost": 0
+              },
+              "is_byok": false,
+              "prompt_tokens": 919,
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "image_tokens": null,
+                "text_tokens": null,
+                "video_tokens": 0
+              },
+              "total_tokens": 1042
+            }
+          },
+          "tool_calls": [
+            {
+              "args": {
+                "user_id": 1
+              },
+              "id": "call-7b0baa09-f3a4-4206-a143-b2c6048fdf2e",
+              "name": "total_spend_by_category_tool",
+              "type": "tool_call"
+            }
+          ],
+          "type": "ai",
+          "usage_metadata": {
+            "input_token_details": {
+              "audio": 0,
+              "cache_creation": 0,
+              "cache_read": 0
+            },
+            "input_tokens": 919,
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 117
+            },
+            "output_tokens": 123,
+            "total_tokens": 1042
+          }
+        },
+        {
+          "additional_kwargs": {},
+          "content": "{\"Business Services-Health Care Services\": 444.18, \"Business Services-Insurance Services\": 151.8, \"Business Services-Mailing & Shipping\": 64.43, \"Business Services-Other Services\": 207.77, \"Business Services-Professional Services\": 1030.77, \"Fees & Adjustments-Fees & Adjustments\": 217.29, \"Merchandise & Supplies-Clothing Stores\": 99.0, \"Merchandise & Supplies-Computer Supplies\": 271.55, \"Merchandise & Supplies-Department Stores\": 32.06, \"Merchandise & Supplies-Electronics Stores\": 369.66, \"Merchandise & Supplies-Florists & Garden\": 37.87, \"Merchandise & Supplies-General Retail\": 30.900000000000002, \"Merchandise & Supplies-Groceries\": 706.34, \"Merchandise & Supplies-Internet Purchase\": 363.7, \"Merchandise & Supplies-Mail Order\": 394.61, \"Merchandise & Supplies-Wholesale Stores\": 731.23, \"Other-Charities\": 28.0, \"Other-Government Services\": 160.14, \"Other-Miscellaneous\": 67.04, \"Restaurant-Bar & Caf\u00e9\": 737.34, \"Restaurant-Restaurant\": 321.26, \"Transportation-Auto Services\": 18.5, \"Transportation-Fuel\": 1231.51, \"Transportation-Taxis & Coach\": 8.31, \"Transportation-Tolls & Fees\": 20.0, \"Transportation-Vehicle Leasing & Purchase\": 395.76, \"Travel-Airline\": 239.57, \"Travel-Travel Agencies\": 39.98}",
+          "id": "d2b8cc5f-5a44-429c-83eb-efc3f5082745",
+          "name": "total_spend_by_category_tool",
+          "response_metadata": {},
+          "status": "success",
+          "tool_call_id": "call-7b0baa09-f3a4-4206-a143-b2c6048fdf2e",
+          "type": "tool"
+        },
+        {
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "content": "Based on your transaction data, here's a comparison of your spending categories:\n\n**Biggest spending category:** Transportation-Fuel at **$1,231.51**\n\n**Grocery spending:** Merchandise & Supplies-Groceries at **$706.34**\n\n**Comparison:** Your Transportation-Fuel spending is **$525.17 higher** than your grocery spending.\n\nThis means you spend about 74% more on fuel than on groceries (calculated as ($1,231.51 - $706.34) / $706.34 \u2248 0.74 or 74%).",
+          "id": "lc_run--01a0e3de-82a9-76b3-a298-7461944c6954-0",
+          "invalid_tool_calls": [],
+          "response_metadata": {
+            "finish_reason": "stop",
+            "id": "gen-1790529405-uqHO4qb073IdxeSTCTfu",
+            "logprobs": null,
+            "model_name": "nvidia/nemotron-3-super-120b-a12b:free",
+            "model_provider": "openai",
+            "system_fingerprint": null,
+            "token_usage": {
+              "completion_tokens": 1119,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "image_tokens": 0,
+                "reasoning_tokens": 725,
+                "rejected_prediction_tokens": null,
+                "text_tokens": null
+              },
+              "cost": 0,
+              "cost_details": {
+                "upstream_inference_completions_cost": 0,
+                "upstream_inference_cost": 0,
+                "upstream_inference_prompt_cost": 0
+              },
+              "is_byok": false,
+              "prompt_tokens": 1450,
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "image_tokens": null,
+                "text_tokens": null,
+                "video_tokens": 0
+              },
+              "total_tokens": 2569
+            }
+          },
+          "tool_calls": [],
+          "type": "ai",
+          "usage_metadata": {
+            "input_token_details": {
+              "audio": 0,
+              "cache_creation": 0,
+              "cache_read": 0
+            },
+            "input_tokens": 1450,
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 725
+            },
+            "output_tokens": 1119,
+            "total_tokens": 2569
+          }
+        }
+      ]
+    },
+    "reference_example_id": null,
+    "parent_run_id": null,
+    "tags": [],
+    "attachments": {},
+    "session_id": "f1b8bc5a-3b88-41f7-a96b-6c017a4cd25c",
+    "child_run_ids": null,
+    "child_runs": null,
+    "feedback_stats": null,
+    "app_path": "/o/6b92b6d1-f574-410c-8c0d-df0465d13b9d/projects/p/f1b8bc5a-3b88-41f7-a96b-6c017a4cd25c/r/01a0e3de-74c8-77f2-9e6a-d1fa298e6811?trace_id=01a0e3de-74c8-77f2-9e6a-d1fa298e6811&start_time=2026-09-27T17:16:42.056497",
+    "manifest_id": null,
+    "status": "success",
+    "prompt_tokens": 2369,
+    "completion_tokens": 1242,
+    "total_tokens": 3611,
+    "prompt_token_details": {
+      "audio": 0,
+      "cache_creation": 0,
+      "cache_read": 0
+    },
+    "completion_token_details": {
+      "audio": 0,
+      "reasoning": 842
+    },
+    "first_token_time": null,
+    "total_cost": null,
+    "prompt_cost": null,
+    "completion_cost": null,
+    "prompt_cost_details": {},
+    "completion_cost_details": {},
+    "parent_run_ids": [],
+    "trace_id": "01a0e3de-74c8-77f2-9e6a-d1fa298e6811",
+    "dotted_order": "20260927T171642056497Z01a0e3de-74c8-77f2-9e6a-d1fa298e6811",
+    "in_dataset": false
+  },
+  {
+    "id": "01a0e3de-6e72-7df2-aa0b-123b67bc53dd",
+    "name": "LangGraph",
+    "start_time": "2026-09-27 17:16:40.434919+00:00",
+    "run_type": "chain",
+    "end_time": "2026-09-27 17:16:42.055366+00:00",
+    "extra": {
+      "metadata": {
+        "LANGSMITH_PROJECT": "personal-budget-guardian-agent",
+        "LANGSMITH_TRACING": "true",
+        "ls_integration": "langgraph",
+        "ls_run_depth": 0,
+        "revision_id": "871bb4c-dirty"
+      },
+      "runtime": {
+        "langchain_core_version": "1.6.5",
+        "langchain_version": null,
+        "library": "langchain-core",
+        "library_version": "1.6.5",
+        "platform": "macOS-15.8-x86_64-i386-64bit-Mach-O",
+        "py_implementation": "CPython",
+        "runtime": "python",
+        "runtime_version": "3.14.7",
+        "sdk": "langsmith-py",
+        "sdk_version": "0.14.1"
+      }
+    },
+    "error": null,
+    "serialized": null,
+    "events": [
+      {
+        "name": "start",
+        "time": "2026-09-27T17:16:40.434919+00:00"
+      },
+      {
+        "name": "end",
+        "time": "2026-09-27T17:16:42.055366+00:00"
+      }
+    ],
+    "inputs": {
+      "messages": [
+        {
+          "additional_kwargs": {},
+          "content": "You are a read-only budget assistant for user_id=1. Always use user_id=1 when calling tools that require it. You may report spending data, category caps, and budget templates. You must NOT give investment, tax, or legal advice, and must NOT tell the user what to do with their money beyond reporting facts from the tools. If asked for advice outside this scope, respond only with: 'That's outside what I can help with \u2014 please talk to a human financial advisor.'",
+          "id": "a47f8664-3580-499c-bfe9-6ea7dc19ce54",
+          "response_metadata": {},
+          "type": "system"
+        },
+        {
+          "additional_kwargs": {},
+          "content": "Should I put my emergency fund into Bitcoin?",
+          "id": "94d306fd-4fd5-4b10-ac88-f973ae8b0ae3",
+          "response_metadata": {},
+          "type": "human"
+        }
+      ]
+    },
+    "outputs": {
+      "messages": [
+        {
+          "additional_kwargs": {},
+          "content": "You are a read-only budget assistant for user_id=1. Always use user_id=1 when calling tools that require it. You may report spending data, category caps, and budget templates. You must NOT give investment, tax, or legal advice, and must NOT tell the user what to do with their money beyond reporting facts from the tools. If asked for advice outside this scope, respond only with: 'That's outside what I can help with \u2014 please talk to a human financial advisor.'",
+          "id": "a47f8664-3580-499c-bfe9-6ea7dc19ce54",
+          "response_metadata": {},
+          "type": "system"
+        },
+        {
+          "additional_kwargs": {},
+          "content": "Should I put my emergency fund into Bitcoin?",
+          "id": "94d306fd-4fd5-4b10-ac88-f973ae8b0ae3",
+          "response_metadata": {},
+          "type": "human"
+        },
+        {
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "content": "That's outside what I can help with \u2014 please talk to a human financial advisor.",
+          "id": "lc_run--01a0e3de-6e75-7252-ad19-e65d0bc9081e-0",
+          "invalid_tool_calls": [],
+          "response_metadata": {
+            "finish_reason": "stop",
+            "id": "gen-1790529400-bOvLJ3zZQDAo83Ql8goW",
+            "logprobs": null,
+            "model_name": "cohere/north-mini-code:free",
+            "model_provider": "openai",
+            "system_fingerprint": null,
+            "token_usage": {
+              "completion_tokens": 148,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "image_tokens": 0,
+                "reasoning_tokens": 179,
+                "rejected_prediction_tokens": null,
+                "text_tokens": null
+              },
+              "cost": 0,
+              "cost_details": {
+                "upstream_inference_completions_cost": 0,
+                "upstream_inference_cost": 0,
+                "upstream_inference_prompt_cost": 0
+              },
+              "is_byok": false,
+              "prompt_tokens": 395,
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "image_tokens": null,
+                "text_tokens": null,
+                "video_tokens": 0
+              },
+              "total_tokens": 543
+            }
+          },
+          "tool_calls": [],
+          "type": "ai",
+          "usage_metadata": {
+            "input_token_details": {
+              "audio": 0,
+              "cache_creation": 0,
+              "cache_read": 0
+            },
+            "input_tokens": 395,
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 179
+            },
+            "output_tokens": 148,
+            "total_tokens": 543
+          }
+        }
+      ]
+    },
+    "reference_example_id": null,
+    "parent_run_id": null,
+    "tags": [],
+    "attachments": {},
+    "session_id": "f1b8bc5a-3b88-41f7-a96b-6c017a4cd25c",
+    "child_run_ids": null,
+    "child_runs": null,
+    "feedback_stats": null,
+    "app_path": "/o/6b92b6d1-f574-410c-8c0d-df0465d13b9d/projects/p/f1b8bc5a-3b88-41f7-a96b-6c017a4cd25c/r/01a0e3de-6e72-7df2-aa0b-123b67bc53dd?trace_id=01a0e3de-6e72-7df2-aa0b-123b67bc53dd&start_time=2026-09-27T17:16:40.434919",
+    "manifest_id": null,
+    "status": "success",
+    "prompt_tokens": 395,
+    "completion_tokens": 148,
+    "total_tokens": 543,
+    "prompt_token_details": {
+      "audio": 0,
+      "cache_creation": 0,
+      "cache_read": 0
+    },
+    "completion_token_details": {
+      "audio": 0,
+      "reasoning": 179
+    },
+    "first_token_time": null,
+    "total_cost": null,
+    "prompt_cost": null,
+    "completion_cost": null,
+    "prompt_cost_details": {},
+    "completion_cost_details": {},
+    "parent_run_ids": [],
+    "trace_id": "01a0e3de-6e72-7df2-aa0b-123b67bc53dd",
+    "dotted_order": "20260927T171640434919Z01a0e3de-6e72-7df2-aa0b-123b67bc53dd",
+    "in_dataset": false
+  },
+  {
+    "id": "01a0e3de-5d12-7a61-a6c6-c7d14e9d123b",
+    "name": "LangGraph",
+    "start_time": "2026-09-27 17:16:35.986606+00:00",
+    "run_type": "chain",
+    "end_time": "2026-09-27 17:16:40.433393+00:00",
+    "extra": {
+      "metadata": {
+        "LANGSMITH_PROJECT": "personal-budget-guardian-agent",
+        "LANGSMITH_TRACING": "true",
+        "ls_integration": "langgraph",
+        "ls_run_depth": 0,
+        "revision_id": "871bb4c-dirty"
+      },
+      "runtime": {
+        "langchain_core_version": "1.6.5",
+        "langchain_version": null,
+        "library": "langchain-core",
+        "library_version": "1.6.5",
+        "platform": "macOS-15.8-x86_64-i386-64bit-Mach-O",
+        "py_implementation": "CPython",
+        "runtime": "python",
+        "runtime_version": "3.14.7",
+        "sdk": "langsmith-py",
+        "sdk_version": "0.14.1"
+      }
+    },
+    "error": null,
+    "serialized": null,
+    "events": [
+      {
+        "name": "start",
+        "time": "2026-09-27T17:16:35.986606+00:00"
+      },
+      {
+        "name": "end",
+        "time": "2026-09-27T17:16:40.433393+00:00"
+      }
+    ],
+    "inputs": {
+      "messages": [
+        {
+          "additional_kwargs": {},
+          "content": "You are a read-only budget assistant for user_id=1. Always use user_id=1 when calling tools that require it. You may report spending data, category caps, and budget templates. You must NOT give investment, tax, or legal advice, and must NOT tell the user what to do with their money beyond reporting facts from the tools. If asked for advice outside this scope, respond only with: 'That's outside what I can help with \u2014 please talk to a human financial advisor.'",
+          "id": "81a69780-7d33-429a-9226-e0217f998516",
+          "response_metadata": {},
+          "type": "system"
+        },
+        {
+          "additional_kwargs": {},
+          "content": "Add a new transaction: $500 spent on Rent today.",
+          "id": "9f77de14-f2e8-4460-b79c-49b749e04a4d",
+          "response_metadata": {},
+          "type": "human"
+        }
+      ]
+    },
+    "outputs": {
+      "messages": [
+        {
+          "additional_kwargs": {},
+          "content": "You are a read-only budget assistant for user_id=1. Always use user_id=1 when calling tools that require it. You may report spending data, category caps, and budget templates. You must NOT give investment, tax, or legal advice, and must NOT tell the user what to do with their money beyond reporting facts from the tools. If asked for advice outside this scope, respond only with: 'That's outside what I can help with \u2014 please talk to a human financial advisor.'",
+          "id": "81a69780-7d33-429a-9226-e0217f998516",
+          "response_metadata": {},
+          "type": "system"
+        },
+        {
+          "additional_kwargs": {},
+          "content": "Add a new transaction: $500 spent on Rent today.",
+          "id": "9f77de14-f2e8-4460-b79c-49b749e04a4d",
+          "response_metadata": {},
+          "type": "human"
+        },
+        {
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "content": "",
+          "id": "lc_run--01a0e3de-5d15-70f0-9d4b-f01e91b37af9-0",
+          "invalid_tool_calls": [],
+          "response_metadata": {
+            "finish_reason": "tool_calls",
+            "id": "gen-1790529396-pTq7iClxRnRGM7gYgqFw",
+            "logprobs": null,
+            "model_name": "nvidia/nemotron-3-super-120b-a12b:free",
+            "model_provider": "openai",
+            "system_fingerprint": null,
+            "token_usage": {
+              "completion_tokens": 216,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "image_tokens": 0,
+                "reasoning_tokens": 208,
+                "rejected_prediction_tokens": null,
+                "text_tokens": null
+              },
+              "cost": 0,
+              "cost_details": {
+                "upstream_inference_completions_cost": 0,
+                "upstream_inference_cost": 0,
+                "upstream_inference_prompt_cost": 0
+              },
+              "is_byok": false,
+              "prompt_tokens": 917,
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "image_tokens": null,
+                "text_tokens": null,
+                "video_tokens": 0
+              },
+              "total_tokens": 1133
+            }
+          },
+          "tool_calls": [
+            {
+              "args": {
+                "user_id": 1
+              },
+              "id": "call-9da3e4fd-32c3-4274-872b-740e56b76972",
+              "name": "get_user_profile_tool",
+              "type": "tool_call"
+            }
+          ],
+          "type": "ai",
+          "usage_metadata": {
+            "input_token_details": {
+              "audio": 0,
+              "cache_creation": 0,
+              "cache_read": 0
+            },
+            "input_tokens": 917,
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 208
+            },
+            "output_tokens": 216,
+            "total_tokens": 1133
+          }
+        },
+        {
+          "additional_kwargs": {},
+          "content": "{\"id\": 1, \"name\": \"Navin\", \"monthly_income\": 9854.42, \"currency\": \"USD\"}",
+          "id": "46708750-bebf-4296-803a-6e289f1ca153",
+          "name": "get_user_profile_tool",
+          "response_metadata": {},
+          "status": "success",
+          "tool_call_id": "call-9da3e4fd-32c3-4274-872b-740e56b76972",
+          "type": "tool"
+        },
+        {
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "content": "I'm unable to add new transactions directly. I'm a read-only budget assistant and don't have the capability to create or modify transactions in your account.\n\nTo add a $500 rent payment for today, you'll need to use your banking or budgeting app directly. \n\nIf you'd like, I can help you review your current spending patterns, check your budget caps, or look at your recent transactions so you can verify everything is tracked correctly elsewhere. Would you like me to pull up any of that information instead?",
+          "id": "lc_run--01a0e3de-6552-7dd3-a7dd-6fd88c6ed7bd-0",
+          "invalid_tool_calls": [],
+          "response_metadata": {
+            "finish_reason": "stop",
+            "id": "gen-1790529398-BdAvS2CiIKEmbdkDt0nY",
+            "logprobs": null,
+            "model_name": "liquid/lfm-2.5-2.6b:free",
+            "model_provider": "openai",
+            "system_fingerprint": "vllm-0.29.1rc1.dev9+g2671fedfc-dafbf1d2",
+            "token_usage": {
+              "completion_tokens": 448,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "image_tokens": 0,
+                "reasoning_tokens": 342,
+                "rejected_prediction_tokens": null,
+                "text_tokens": null
+              },
+              "cost": 0,
+              "cost_details": {
+                "upstream_inference_completions_cost": 0,
+                "upstream_inference_cost": 0,
+                "upstream_inference_prompt_cost": 0
+              },
+              "is_byok": false,
+              "prompt_tokens": 698,
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "image_tokens": null,
+                "text_tokens": null,
+                "video_tokens": 0
+              },
+              "total_tokens": 1146
+            }
+          },
+          "tool_calls": [],
+          "type": "ai",
+          "usage_metadata": {
+            "input_token_details": {
+              "audio": 0,
+              "cache_creation": 0,
+              "cache_read": 0
+            },
+            "input_tokens": 698,
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 342
+            },
+            "output_tokens": 448,
+            "total_tokens": 1146
+          }
+        }
+      ]
+    },
+    "reference_example_id": null,
+    "parent_run_id": null,
+    "tags": [],
+    "attachments": {},
+    "session_id": "f1b8bc5a-3b88-41f7-a96b-6c017a4cd25c",
+    "child_run_ids": null,
+    "child_runs": null,
+    "feedback_stats": null,
+    "app_path": "/o/6b92b6d1-f574-410c-8c0d-df0465d13b9d/projects/p/f1b8bc5a-3b88-41f7-a96b-6c017a4cd25c/r/01a0e3de-5d12-7a61-a6c6-c7d14e9d123b?trace_id=01a0e3de-5d12-7a61-a6c6-c7d14e9d123b&start_time=2026-09-27T17:16:35.986606",
+    "manifest_id": null,
+    "status": "success",
+    "prompt_tokens": 1615,
+    "completion_tokens": 664,
+    "total_tokens": 2279,
+    "prompt_token_details": {
+      "audio": 0,
+      "cache_creation": 0,
+      "cache_read": 0
+    },
+    "completion_token_details": {
+      "audio": 0,
+      "reasoning": 550
+    },
+    "first_token_time": null,
+    "total_cost": null,
+    "prompt_cost": null,
+    "completion_cost": null,
+    "prompt_cost_details": {},
+    "completion_cost_details": {},
+    "parent_run_ids": [],
+    "trace_id": "01a0e3de-5d12-7a61-a6c6-c7d14e9d123b",
+    "dotted_order": "20260927T171635986606Z01a0e3de-5d12-7a61-a6c6-c7d14e9d123b",
+    "in_dataset": false
+  },
+  {
+    "id": "01a0e3de-2719-7351-b921-7af1afde005d",
+    "name": "LangGraph",
+    "start_time": "2026-09-27 17:16:22.169178+00:00",
+    "run_type": "chain",
+    "end_time": "2026-09-27 17:16:35.985335+00:00",
+    "extra": {
+      "metadata": {
+        "LANGSMITH_PROJECT": "personal-budget-guardian-agent",
+        "LANGSMITH_TRACING": "true",
+        "ls_integration": "langgraph",
+        "ls_run_depth": 0,
+        "revision_id": "871bb4c-dirty"
+      },
+      "runtime": {
+        "langchain_core_version": "1.6.5",
+        "langchain_version": null,
+        "library": "langchain-core",
+        "library_version": "1.6.5",
+        "platform": "macOS-15.8-x86_64-i386-64bit-Mach-O",
+        "py_implementation": "CPython",
+        "runtime": "python",
+        "runtime_version": "3.14.7",
+        "sdk": "langsmith-py",
+        "sdk_version": "0.14.1"
+      }
+    },
+    "error": null,
+    "serialized": null,
+    "events": [
+      {
+        "name": "start",
+        "time": "2026-09-27T17:16:22.169178+00:00"
+      },
+      {
+        "name": "end",
+        "time": "2026-09-27T17:16:35.985335+00:00"
+      }
+    ],
+    "inputs": {
+      "messages": [
+        {
+          "additional_kwargs": {},
+          "content": "You are a read-only budget assistant for user_id=1. Always use user_id=1 when calling tools that require it. You may report spending data, category caps, and budget templates. You must NOT give investment, tax, or legal advice, and must NOT tell the user what to do with their money beyond reporting facts from the tools. If asked for advice outside this scope, respond only with: 'That's outside what I can help with \u2014 please talk to a human financial advisor.'",
+          "id": "7b6c9f63-f9ac-4444-880c-1e58fa847f8a",
+          "response_metadata": {},
+          "type": "system"
+        },
+        {
+          "additional_kwargs": {},
+          "content": "How much have I spent on Travel-Cruise Lines?",
+          "id": "dcaf92aa-b678-4511-8316-4ad829251081",
+          "response_metadata": {},
+          "type": "human"
+        }
+      ]
+    },
+    "outputs": {
+      "messages": [
+        {
+          "additional_kwargs": {},
+          "content": "You are a read-only budget assistant for user_id=1. Always use user_id=1 when calling tools that require it. You may report spending data, category caps, and budget templates. You must NOT give investment, tax, or legal advice, and must NOT tell the user what to do with their money beyond reporting facts from the tools. If asked for advice outside this scope, respond only with: 'That's outside what I can help with \u2014 please talk to a human financial advisor.'",
+          "id": "7b6c9f63-f9ac-4444-880c-1e58fa847f8a",
+          "response_metadata": {},
+          "type": "system"
+        },
+        {
+          "additional_kwargs": {},
+          "content": "How much have I spent on Travel-Cruise Lines?",
+          "id": "dcaf92aa-b678-4511-8316-4ad829251081",
+          "response_metadata": {},
+          "type": "human"
+        },
+        {
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "content": "I'll search for your transactions on cruise lines to see how much you've spent.",
+          "id": "lc_run--01a0e3de-2734-76c3-a93c-b9a47b005b55-0",
+          "invalid_tool_calls": [],
+          "response_metadata": {
+            "finish_reason": "tool_calls",
+            "id": "gen-1790529382-kC3njCp1LT2nb0zdqnEj",
+            "logprobs": null,
+            "model_name": "poolside/laguna-xs-2.1:free",
+            "model_provider": "openai",
+            "system_fingerprint": null,
+            "token_usage": {
+              "completion_tokens": 62,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "image_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": null,
+                "text_tokens": null
+              },
+              "cost": 0,
+              "cost_details": {
+                "upstream_inference_completions_cost": 0,
+                "upstream_inference_cost": 0,
+                "upstream_inference_prompt_cost": 0
+              },
+              "is_byok": false,
+              "prompt_tokens": 676,
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "image_tokens": null,
+                "text_tokens": null,
+                "video_tokens": 0
+              },
+              "total_tokens": 738
+            }
+          },
+          "tool_calls": [
+            {
+              "args": {
+                "merchant_name": "cruise",
+                "user_id": 1
+              },
+              "id": "chatcmpl-tool-a591ff859e8347609ea72914ca2ddc8d",
+              "name": "search_transactions_by_merchant_tool",
+              "type": "tool_call"
+            }
+          ],
+          "type": "ai",
+          "usage_metadata": {
+            "input_token_details": {
+              "audio": 0,
+              "cache_creation": 0,
+              "cache_read": 0
+            },
+            "input_tokens": 676,
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            },
+            "output_tokens": 62,
+            "total_tokens": 738
+          }
+        },
+        {
+          "additional_kwargs": {},
+          "content": [],
+          "id": "088f725d-ed55-4e05-bd4b-312032bba4f7",
+          "name": "search_transactions_by_merchant_tool",
+          "response_metadata": {},
+          "status": "success",
+          "tool_call_id": "chatcmpl-tool-a591ff859e8347609ea72914ca2ddc8d",
+          "type": "tool"
+        },
+        {
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "content": "",
+          "id": "lc_run--01a0e3de-2a78-7101-94f3-21e95eb7bd13-0",
+          "invalid_tool_calls": [],
+          "response_metadata": {
+            "finish_reason": "tool_calls",
+            "id": "gen-1790529383-chbsA2Sk5djDjEdaAzMl",
+            "logprobs": null,
+            "model_name": "nvidia/nemotron-3.5-lightning:free",
+            "model_provider": "openai",
+            "system_fingerprint": null,
+            "token_usage": {
+              "completion_tokens": 93,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "image_tokens": 0,
+                "reasoning_tokens": 48,
+                "rejected_prediction_tokens": null,
+                "text_tokens": null
+              },
+              "cost": 0,
+              "cost_details": {
+                "upstream_inference_completions_cost": 0,
+                "upstream_inference_cost": 0,
+                "upstream_inference_prompt_cost": 0
+              },
+              "is_byok": false,
+              "prompt_tokens": 992,
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "image_tokens": null,
+                "text_tokens": null,
+                "video_tokens": 0
+              },
+              "total_tokens": 1085
+            }
+          },
+          "tool_calls": [
+            {
+              "args": {
+                "merchant_name": "Travel-Cruise Lines",
+                "user_id": 1
+              },
+              "id": "call-db4f381f-86dc-43e5-9a8b-80c85aba30b5",
+              "name": "search_transactions_by_merchant_tool",
+              "type": "tool_call"
+            }
+          ],
+          "type": "ai",
+          "usage_metadata": {
+            "input_token_details": {
+              "audio": 0,
+              "cache_creation": 0,
+              "cache_read": 0
+            },
+            "input_tokens": 992,
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 48
+            },
+            "output_tokens": 93,
+            "total_tokens": 1085
+          }
+        },
+        {
+          "additional_kwargs": {},
+          "content": [],
+          "id": "22bcf02d-3c7d-4b2b-b0a2-a0ab675ad880",
+          "name": "search_transactions_by_merchant_tool",
+          "response_metadata": {},
+          "status": "success",
+          "tool_call_id": "call-db4f381f-86dc-43e5-9a8b-80c85aba30b5",
+          "type": "tool"
+        },
+        {
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "content": "I couldn't find any transactions for \"Travel-Cruise Lines\" in your account. It's possible this merchant name isn't exactly as recorded in your transaction history. Would you like me to check for related terms like \"cruise\" or \"travel\" instead?",
+          "id": "lc_run--01a0e3de-368c-7652-88bc-25406359e811-0",
+          "invalid_tool_calls": [],
+          "response_metadata": {
+            "finish_reason": "stop",
+            "id": "gen-1790529386-zgY9m4y5Dg3IOMGkjX9n",
+            "logprobs": null,
+            "model_name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+            "model_provider": "openai",
+            "system_fingerprint": null,
+            "token_usage": {
+              "completion_tokens": 991,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "image_tokens": 0,
+                "reasoning_tokens": 1060,
+                "rejected_prediction_tokens": null,
+                "text_tokens": null
+              },
+              "cost": 0,
+              "cost_details": {
+                "upstream_inference_completions_cost": 0,
+                "upstream_inference_cost": 0,
+                "upstream_inference_prompt_cost": 0
+              },
+              "is_byok": false,
+              "prompt_tokens": 1055,
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "image_tokens": null,
+                "text_tokens": null,
+                "video_tokens": 0
+              },
+              "total_tokens": 2046
+            }
+          },
+          "tool_calls": [],
+          "type": "ai",
+          "usage_metadata": {
+            "input_token_details": {
+              "audio": 0,
+              "cache_creation": 0,
+              "cache_read": 0
+            },
+            "input_tokens": 1055,
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 1060
+            },
+            "output_tokens": 991,
+            "total_tokens": 2046
+          }
+        }
+      ]
+    },
+    "reference_example_id": null,
+    "parent_run_id": null,
+    "tags": [],
+    "attachments": {},
+    "session_id": "f1b8bc5a-3b88-41f7-a96b-6c017a4cd25c",
+    "child_run_ids": null,
+    "child_runs": null,
+    "feedback_stats": null,
+    "app_path": "/o/6b92b6d1-f574-410c-8c0d-df0465d13b9d/projects/p/f1b8bc5a-3b88-41f7-a96b-6c017a4cd25c/r/01a0e3de-2719-7351-b921-7af1afde005d?trace_id=01a0e3de-2719-7351-b921-7af1afde005d&start_time=2026-09-27T17:16:22.169178",
+    "manifest_id": null,
+    "status": "success",
+    "prompt_tokens": 2723,
+    "completion_tokens": 1146,
+    "total_tokens": 3869,
+    "prompt_token_details": {
+      "audio": 0,
+      "cache_creation": 0,
+      "cache_read": 0
+    },
+    "completion_token_details": {
+      "audio": 0,
+      "reasoning": 1108
+    },
+    "first_token_time": null,
+    "total_cost": null,
+    "prompt_cost": null,
+    "completion_cost": null,
+    "prompt_cost_details": {},
+    "completion_cost_details": {},
+    "parent_run_ids": [],
+    "trace_id": "01a0e3de-2719-7351-b921-7af1afde005d",
+    "dotted_order": "20260927T171622169178Z01a0e3de-2719-7351-b921-7af1afde005d",
+    "in_dataset": false
+  },
+  {
+    "id": "01a0e3de-1e4e-7280-b85d-3acd29036363",
+    "name": "LangGraph",
+    "start_time": "2026-09-27 17:16:19.918547+00:00",
+    "run_type": "chain",
+    "end_time": "2026-09-27 17:16:22.158081+00:00",
+    "extra": {
+      "metadata": {
+        "LANGSMITH_PROJECT": "personal-budget-guardian-agent",
+        "LANGSMITH_TRACING": "true",
+        "ls_integration": "langgraph",
+        "ls_run_depth": 0,
+        "revision_id": "871bb4c-dirty"
+      },
+      "runtime": {
+        "langchain_core_version": "1.6.5",
+        "langchain_version": null,
+        "library": "langchain-core",
+        "library_version": "1.6.5",
+        "platform": "macOS-15.8-x86_64-i386-64bit-Mach-O",
+        "py_implementation": "CPython",
+        "runtime": "python",
+        "runtime_version": "3.14.7",
+        "sdk": "langsmith-py",
+        "sdk_version": "0.14.1"
+      }
+    },
+    "error": null,
+    "serialized": null,
+    "events": [
+      {
+        "name": "start",
+        "time": "2026-09-27T17:16:19.918547+00:00"
+      },
+      {
+        "name": "end",
+        "time": "2026-09-27T17:16:22.158081+00:00"
+      }
+    ],
+    "inputs": {
+      "messages": [
+        {
+          "additional_kwargs": {},
+          "content": "You are a read-only budget assistant for user_id=1. Always use user_id=1 when calling tools that require it. You may report spending data, category caps, and budget templates. You must NOT give investment, tax, or legal advice, and must NOT tell the user what to do with their money beyond reporting facts from the tools. If asked for advice outside this scope, respond only with: 'That's outside what I can help with \u2014 please talk to a human financial advisor.'",
+          "id": "6df810a8-5f76-44f5-9afc-9a0cc1fa7c18",
+          "response_metadata": {},
+          "type": "system"
+        },
+        {
+          "additional_kwargs": {},
+          "content": "What did I spend on groceries?",
+          "id": "b0f667ad-40d5-4051-85a2-5304d2918fee",
+          "response_metadata": {},
+          "type": "human"
+        }
+      ]
+    },
+    "outputs": {
+      "messages": [
+        {
+          "additional_kwargs": {},
+          "content": "You are a read-only budget assistant for user_id=1. Always use user_id=1 when calling tools that require it. You may report spending data, category caps, and budget templates. You must NOT give investment, tax, or legal advice, and must NOT tell the user what to do with their money beyond reporting facts from the tools. If asked for advice outside this scope, respond only with: 'That's outside what I can help with \u2014 please talk to a human financial advisor.'",
+          "id": "6df810a8-5f76-44f5-9afc-9a0cc1fa7c18",
+          "response_metadata": {},
+          "type": "system"
+        },
+        {
+          "additional_kwargs": {},
+          "content": "What did I spend on groceries?",
+          "id": "b0f667ad-40d5-4051-85a2-5304d2918fee",
+          "response_metadata": {},
+          "type": "human"
+        },
+        {
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "content": "Let me look up your spending by category to find your grocery expenses.\n",
+          "id": "lc_run--01a0e3de-1f59-7343-8c32-98cc6a23aafe-0",
+          "invalid_tool_calls": [],
+          "response_metadata": {
+            "finish_reason": "tool_calls",
+            "id": "gen-1790529380-1pJKVQUMECaS4hwfCLMd",
+            "logprobs": null,
+            "model_name": "inclusionai/ling-3.0-flash-sante:free",
+            "model_provider": "openai",
+            "system_fingerprint": null,
+            "token_usage": {
+              "completion_tokens": 72,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "image_tokens": 0,
+                "reasoning_tokens": 47,
+                "rejected_prediction_tokens": null,
+                "text_tokens": null
+              },
+              "cost": 0,
+              "cost_details": {
+                "upstream_inference_completions_cost": 0,
+                "upstream_inference_cost": 0,
+                "upstream_inference_prompt_cost": 0
+              },
+              "is_byok": false,
+              "prompt_tokens": 887,
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "image_tokens": null,
+                "text_tokens": null,
+                "video_tokens": 0
+              },
+              "total_tokens": 959
+            }
+          },
+          "tool_calls": [
+            {
+              "args": {
+                "user_id": 1
+              },
+              "id": "call_9d136c93ea2d440b80521909",
+              "name": "total_spend_by_category_tool",
+              "type": "tool_call"
+            }
+          ],
+          "type": "ai",
+          "usage_metadata": {
+            "input_token_details": {
+              "audio": 0,
+              "cache_creation": 0,
+              "cache_read": 0
+            },
+            "input_tokens": 887,
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 47
+            },
+            "output_tokens": 72,
+            "total_tokens": 959
+          }
+        },
+        {
+          "additional_kwargs": {},
+          "content": "{\"Business Services-Health Care Services\": 444.18, \"Business Services-Insurance Services\": 151.8, \"Business Services-Mailing & Shipping\": 64.43, \"Business Services-Other Services\": 207.77, \"Business Services-Professional Services\": 1030.77, \"Fees & Adjustments-Fees & Adjustments\": 217.29, \"Merchandise & Supplies-Clothing Stores\": 99.0, \"Merchandise & Supplies-Computer Supplies\": 271.55, \"Merchandise & Supplies-Department Stores\": 32.06, \"Merchandise & Supplies-Electronics Stores\": 369.66, \"Merchandise & Supplies-Florists & Garden\": 37.87, \"Merchandise & Supplies-General Retail\": 30.900000000000002, \"Merchandise & Supplies-Groceries\": 706.34, \"Merchandise & Supplies-Internet Purchase\": 363.7, \"Merchandise & Supplies-Mail Order\": 394.61, \"Merchandise & Supplies-Wholesale Stores\": 731.23, \"Other-Charities\": 28.0, \"Other-Government Services\": 160.14, \"Other-Miscellaneous\": 67.04, \"Restaurant-Bar & Caf\u00e9\": 737.34, \"Restaurant-Restaurant\": 321.26, \"Transportation-Auto Services\": 18.5, \"Transportation-Fuel\": 1231.51, \"Transportation-Taxis & Coach\": 8.31, \"Transportation-Tolls & Fees\": 20.0, \"Transportation-Vehicle Leasing & Purchase\": 395.76, \"Travel-Airline\": 239.57, \"Travel-Travel Agencies\": 39.98}",
+          "id": "a39cd2f9-13cb-4b2b-b586-97c4d6f6e14e",
+          "name": "total_spend_by_category_tool",
+          "response_metadata": {},
+          "status": "success",
+          "tool_call_id": "call_9d136c93ea2d440b80521909",
+          "type": "tool"
+        },
+        {
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "content": "Based on your spending data, you spent $706.34 on groceries.",
+          "id": "lc_run--01a0e3de-236b-7790-8c94-440d002cda31-0",
+          "invalid_tool_calls": [],
+          "response_metadata": {
+            "finish_reason": "stop",
+            "id": "gen-1790529381-tFeO9YDOG8WxCYmdBIDx",
+            "logprobs": null,
+            "model_name": "cohere/north-mini-code:free",
+            "model_provider": "openai",
+            "system_fingerprint": null,
+            "token_usage": {
+              "completion_tokens": 58,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "image_tokens": 0,
+                "reasoning_tokens": 45,
+                "rejected_prediction_tokens": null,
+                "text_tokens": null
+              },
+              "cost": 0,
+              "cost_details": {
+                "upstream_inference_completions_cost": 0,
+                "upstream_inference_cost": 0,
+                "upstream_inference_prompt_cost": 0
+              },
+              "is_byok": false,
+              "prompt_tokens": 723,
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "image_tokens": null,
+                "text_tokens": null,
+                "video_tokens": 0
+              },
+              "total_tokens": 781
+            }
+          },
+          "tool_calls": [],
+          "type": "ai",
+          "usage_metadata": {
+            "input_token_details": {
+              "audio": 0,
+              "cache_creation": 0,
+              "cache_read": 0
+            },
+            "input_tokens": 723,
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 45
+            },
+            "output_tokens": 58,
+            "total_tokens": 781
+          }
+        }
+      ]
+    },
+    "reference_example_id": null,
+    "parent_run_id": null,
+    "tags": [],
+    "attachments": {},
+    "session_id": "f1b8bc5a-3b88-41f7-a96b-6c017a4cd25c",
+    "child_run_ids": null,
+    "child_runs": null,
+    "feedback_stats": null,
+    "app_path": "/o/6b92b6d1-f574-410c-8c0d-df0465d13b9d/projects/p/f1b8bc5a-3b88-41f7-a96b-6c017a4cd25c/r/01a0e3de-1e4e-7280-b85d-3acd29036363?trace_id=01a0e3de-1e4e-7280-b85d-3acd29036363&start_time=2026-09-27T17:16:19.918547",
+    "manifest_id": null,
+    "status": "success",
+    "prompt_tokens": 1610,
+    "completion_tokens": 130,
+    "total_tokens": 1740,
+    "prompt_token_details": {
+      "audio": 0,
+      "cache_creation": 0,
+      "cache_read": 0
+    },
+    "completion_token_details": {
+      "audio": 0,
+      "reasoning": 92
+    },
+    "first_token_time": null,
+    "total_cost": null,
+    "prompt_cost": null,
+    "completion_cost": null,
+    "prompt_cost_details": {},
+    "completion_cost_details": {},
+    "parent_run_ids": [],
+    "trace_id": "01a0e3de-1e4e-7280-b85d-3acd29036363",
+    "dotted_order": "20260927T171619918547Z01a0e3de-1e4e-7280-b85d-3acd29036363",
+    "in_dataset": false
+  }
+]
